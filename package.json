@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "update-mpe-style": "node scripts/update-mpe-style.js",
+    "update-mpe-style:watch": "node scripts/update-mpe-style.js --watch",
     "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:stylelint",
     "lint:eslint": "eslint . --cache --fix",
     "lint:prettier": "prettier . --cache --write --log-level silent '!pnpm-lock.yaml'",
@@ -17,7 +18,9 @@
     "@tofrankie/eslint": "^0.3.1",
     "@tofrankie/prettier": "^0.2.0",
     "@tofrankie/stylelint": "^0.3.0",
+    "chokidar": "^5.0.0",
     "eslint": "^10.4.0",
+    "github-markdown-css": "^5.9.0",
     "prettier": "^3.8.3",
     "stylelint": "^17.12.0"
   }
