@@ -13,9 +13,9 @@ That’s why this project uses [Customize CSS](https://shd101wyy.github.io/markd
 ## 🚀 Usage
 
 1. Install the Markdown Preview Enhanced extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) or [Open VSX](https://open-vsx.org/extension/shd101wyy/markdown-preview-enhanced)
-2. Make sure the Preview Theme is set to `github-light` (the default theme)
+2. Make sure the Preview Theme is set to `github-light` or `github-dark`
 3. In the command palette, run `Markdown Preview Enhanced: Customize CSS (Global)` to open the global `style.less`
-4. Replace the content of your local `style.less` with the content from [github-light.less](./shd101wyy.markdown-preview-enhanced/github-light.less)
+4. Replace the content of your local `style.less` with the content from [github-markdown.less](./shd101wyy.markdown-preview-enhanced/github-markdown.less)
 
 Global `style.less` file locations:
 
@@ -23,7 +23,7 @@ Global `style.less` file locations:
 - Linux: `~/.config/crossnote/style.less`
 - Windows: `%USERPROFILE%\\.crossnote\\style.less`
 
-My `settings.json`:
+Example `settings.json`:
 
 ```json
 {
@@ -40,7 +40,7 @@ My `settings.json`:
 
 ## 🧩 TODO
 
-- [ ] Support GitHub Dark theme
+- [x] Support GitHub Dark theme
 - [ ] Add the [Mona Sans VF](https://github.com/github/mona-sans) font
 
 ## ❤️ Acknowledgements

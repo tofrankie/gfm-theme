@@ -11,9 +11,9 @@
 ## 🚀 使用方式
 
 1. 在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) 或 [Open VSX](https://open-vsx.org/extension/shd101wyy/markdown-preview-enhanced) 下载安装 Markdown Preview Enhanced 扩展
-2. 确保 Markdown Preview Enhanced 扩展的 Preview Theme 是 `github-light` 主题（它是默认主题）
+2. 确保 Markdown Preview Enhanced 扩展的 Preview Theme 是 `github-light` 或 `github-dark` 主题
 3. 在命令面板输入 `Markdown Preview Enhanced: Customize CSS (Global)` 打开全局 `style.less` 文件。
-4. 将 [github-light.less](./shd101wyy.markdown-preview-enhanced/github-light.less) 内容覆盖本地的 `style.less` 文件。
+4. 将 [github-markdown.less](./shd101wyy.markdown-preview-enhanced/github-markdown.less) 内容覆盖本地的 `style.less` 文件。
 
 全局 `style.less` 文件路径：
 
@@ -21,7 +21,7 @@
 - Linux: `~/.config/crossnote/style.less`
 - Windows: `%USERPROFILE%\.crossnote\style.less`
 
-我的 `settings.json` 配置：
+示例 `settings.json` 配置：
 
 ```json
 {
@@ -38,7 +38,7 @@
 
 ## 🧩 TODO
 
-- [ ] 适配 GitHub Dark 主题
+- [x] 适配 GitHub Dark 主题
 - [ ] 添加 [Mona Sans VF](https://github.com/github/mona-sans) 字体
 
 ## ❤️ 致谢

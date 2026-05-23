@@ -35,7 +35,7 @@ function getConfig() {
   const projectRoot = path.resolve(__dirname, '..')
   const sourceFilePath = path.join(
     projectRoot,
-    'shd101wyy.markdown-preview-enhanced/github-light.less'
+    'shd101wyy.markdown-preview-enhanced/github-markdown.less'
   )
   const targetFilePath = path.join(os.homedir(), '.local/state/crossnote/style.less')
   const backupsDir = path.join(projectRoot, 'backups')
