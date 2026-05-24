@@ -1032,6 +1032,10 @@ body.colorblind_tritan.theme-light {
   border-radius: 6px;
 }
 
+.markdown-rendered :not(pre) a code {
+  color: var(--fgColor-accent);
+}
+
 .markdown-rendered blockquote {
   padding-inline-start: 1em;
   color: var(--fgColor-muted);
@@ -1216,6 +1220,13 @@ body.callout-on .callout[data-callout='caution'] .callout-icon::before {
 /* Markdown hr */
 .markdown-rendered hr {
   margin-block: var(--base-size-24);
+}
+
+/* Task List */
+ul > li.task-list-item[data-task='x'],
+ul > li.task-list-item[data-task='X'] {
+  color: var(--fgColor-default);
+  text-decoration: initial;
 }
 
 /* Headers */
