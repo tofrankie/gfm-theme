@@ -11,6 +11,10 @@ logs
 .DS_Store
 desktop.ini
 
+# Editor
+.vscode/
+.idea/
+
 # Cache
 *.tsbuildinfo
 .eslintcache
