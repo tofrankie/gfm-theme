@@ -1,8 +1,22 @@
 /* @settings
 
 name: GitHub Flavored Markdown Theme Settings
-id: id
+id: github-flavored-markdown-theme
 settings:
+  -
+    id: general
+    title: General
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: accent
+    title: Accent Color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#0969da'
+    default-dark: '#4493f8'
   -
     # Colorblind
 
@@ -19,123 +33,6 @@ settings:
     id: colorblind_tritan
     title: Tritanopia
     type: class-toggle
-  -
-    # Callout Settings
-
-    id: callout
-    title: Alerts
-    type: heading
-    level: 1
-    collapsed: true
-  -
-    id: callout-on
-    title: GitHub Alerts style
-    type: class-toggle
-    default: true
-  -
-    # Headers underline
-
-    id: headers-underline
-    title: Headers underline
-    type: heading
-    level: 1
-    collapsed: true
-  -
-    id: h1-underline
-    title: H1 header underline enabled
-    type: class-toggle
-    default: true
-  -
-    id: h2-underline
-    title: H2 header underline enabled
-    type: class-toggle
-    default: true
-  -
-    # Headers Settings
-
-    id: headers
-    title: Headers colors
-    type: heading
-    level: 1
-    collapsed: true
-  -
-    # All Headers
-
-    id: all-headers
-    title: All headers
-    type: heading
-    level: 3
-    collapsed: true
-  -
-    id: headers-one-color
-    title: All headers are the same color
-    type: class-toggle
-    default: true
-  -
-    id: h-color-theme
-    title: Header color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
-  -
-    # Particular Headers
-
-    id: particular headers
-    title: Particular headers
-    description: This settings won't work if `All headers are the same color` is ON
-    type: heading
-    level: 3
-    collapsed: true
-  -
-    id: h1-color-theme
-    title: h1 color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
-  -
-    id: h2-color-theme
-    title: h2 color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
-  -
-    id: h3-color-theme
-    title: h3 color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
-  -
-    id: h4-color-theme
-    title: h4 color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
-  -
-    id: h5-color-theme
-    title: h5 color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
-  -
-    id: h6-color-theme
-    title: h6 color
-    type: variable-themed-color
-    opacity: false
-    format: hex
-    default-light: '#24292f'
-    default-dark: '#7ee787'
   -
     # Kanban Settings
 
@@ -352,12 +249,12 @@ body {
 
   /* Headings */
   --heading-formatting: var(--text-faint);
-  --h1-color: var(--h1-color-theme);
-  --h2-color: var(--h2-color-theme);
-  --h3-color: var(--h3-color-theme);
-  --h4-color: var(--h4-color-theme);
-  --h5-color: var(--h5-color-theme);
-  --h6-color: var(--h6-color-theme);
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -371,11 +268,11 @@ body {
   --h5-line-height: var(--line-height-normal);
   --h6-line-height: var(--line-height-normal);
   --h1-size: 2em;
-  --h2-size: 1.6em;
-  --h3-size: 1.37em;
-  --h4-size: 1.25em;
-  --h5-size: 1.12em;
-  --h6-size: 1.12em;
+  --h2-size: 1.5em;
+  --h3-size: 1.25em;
+  --h4-size: 1em;
+  --h5-size: 0.875em;
+  --h6-size: 0.85em;
   --h1-style: normal;
   --h2-style: normal;
   --h3-style: normal;
@@ -812,13 +709,6 @@ body {
   --shadow-s: none;
   --shadow-l: none;
   --inline-code-background: #6e768166;
-  --h-color-theme: var(--color-green);
-  --h1-color-theme: var(--color-green);
-  --h2-color-theme: var(--color-green);
-  --h3-color-theme: var(--color-green);
-  --h4-color-theme: var(--color-green);
-  --h5-color-theme: var(--color-green);
-  --h6-color-theme: var(--color-green);
   --background-modifier-hover-alpha: 0.12;
   --color-btn-primary-bg: #238636;
   --color-btn-primary-hover-bg: #2ea043;
@@ -891,13 +781,6 @@ body {
   --shadow-s: none;
   --shadow-l: none;
   --inline-code-background: #aeb8c133;
-  --h-color-theme: var(--text-normal);
-  --h1-color-theme: var(--text-normal);
-  --h2-color-theme: var(--text-normal);
-  --h3-color-theme: var(--text-normal);
-  --h4-color-theme: var(--text-normal);
-  --h5-color-theme: var(--text-normal);
-  --h6-color-theme: var(--text-normal);
   --background-modifier-hover-alpha: 0.32;
   --color-btn-primary-bg: #2da44f;
   --color-btn-primary-hover-bg: #2c964a;
@@ -1158,14 +1041,12 @@ button.mod-cta:hover {
   background-color: var(--color-btn-primary-hover-bg);
 }
 
-/* Callout */
-body.callout-on {
+/* Alerts (Callouts) */
+.markdown-rendered .callout {
   --callout-radius: 0;
   --callout-border-width: 0;
   --callout-padding: 0 1em;
-}
 
-body.callout-on .callout {
   padding-block: var(--base-size-8);
   padding-inline: var(--base-size-16);
   color: var(--fgColor-default);
@@ -1173,83 +1054,83 @@ body.callout-on .callout {
   border-inline-start: 0.25em solid var(--borderColor-default);
 }
 
-body.callout-on .callout .callout-title {
+.markdown-rendered .callout .callout-title {
   gap: var(--base-size-8);
   margin-block-end: var(--base-size-16);
 }
 
-body.callout-on .callout .callout-title-inner {
+.markdown-rendered .callout .callout-title-inner {
   font-weight: var(--font-medium);
 }
 
-body.callout-on .callout[data-callout='note'] {
+.markdown-rendered .callout[data-callout='note'] {
   border-inline-start: 0.25em solid var(--borderColor-accent-emphasis);
 }
 
-body.callout-on .callout[data-callout='note'] .callout-icon,
-body.callout-on .callout[data-callout='note'] .callout-title-inner {
+.markdown-rendered .callout[data-callout='note'] .callout-icon,
+.markdown-rendered .callout[data-callout='note'] .callout-title-inner {
   color: var(--fgColor-accent);
 }
 
-body.callout-on .callout[data-callout='tip'] {
+.markdown-rendered .callout[data-callout='tip'] {
   border-inline-start: 0.25em solid var(--borderColor-success-emphasis);
 }
 
-body.callout-on .callout[data-callout='tip'] .callout-icon,
-body.callout-on .callout[data-callout='tip'] .callout-title-inner {
+.markdown-rendered .callout[data-callout='tip'] .callout-icon,
+.markdown-rendered .callout[data-callout='tip'] .callout-title-inner {
   color: var(--fgColor-success);
 }
 
-body.callout-on .callout[data-callout='important'] {
+.markdown-rendered .callout[data-callout='important'] {
   border-inline-start: 0.25em solid var(--borderColor-done-emphasis);
 }
 
-body.callout-on .callout[data-callout='important'] .callout-icon,
-body.callout-on .callout[data-callout='important'] .callout-title-inner {
+.markdown-rendered .callout[data-callout='important'] .callout-icon,
+.markdown-rendered .callout[data-callout='important'] .callout-title-inner {
   color: var(--fgColor-done);
 }
 
-body.callout-on .callout[data-callout='warning'] {
+.markdown-rendered .callout[data-callout='warning'] {
   border-inline-start: 0.25em solid var(--borderColor-attention-emphasis);
 }
 
-body.callout-on .callout[data-callout='warning'] .callout-icon,
-body.callout-on .callout[data-callout='warning'] .callout-title-inner {
+.markdown-rendered .callout[data-callout='warning'] .callout-icon,
+.markdown-rendered .callout[data-callout='warning'] .callout-title-inner {
   color: var(--fgColor-attention);
 }
 
-body.callout-on .callout[data-callout='caution'] {
+.markdown-rendered .callout[data-callout='caution'] {
   border-inline-start: 0.25em solid var(--borderColor-danger-emphasis);
 }
 
-body.callout-on .callout[data-callout='caution'] .callout-icon,
-body.callout-on .callout[data-callout='caution'] .callout-title-inner {
+.markdown-rendered .callout[data-callout='caution'] .callout-icon,
+.markdown-rendered .callout[data-callout='caution'] .callout-title-inner {
   color: var(--fgColor-danger);
 }
 
-body.callout-on .callout-content p {
+.markdown-rendered .callout-content p {
   margin-block: 0 var(--base-size-16);
 }
 
-body.callout-on .callout-content > :first-child {
+.markdown-rendered .callout-content > :first-child {
   margin-top: 0;
 }
 
-body.callout-on .callout-content > :last-child {
+.markdown-rendered .callout-content > :last-child {
   margin-bottom: 0;
 }
 
 /* disable original callout icon */
-body.callout-on .callout-icon > svg {
+.markdown-rendered .callout-icon > svg {
   display: none;
 }
 
-body.callout-on .callout-icon {
+.markdown-rendered .callout-icon {
   width: var(--icon-s);
   height: var(--icon-s);
 }
 
-body.callout-on .callout .callout-icon::before {
+.markdown-rendered .callout .callout-icon::before {
   width: var(--icon-s);
   height: var(--icon-s);
   font-family: gfm-alert-icon;
@@ -1257,23 +1138,23 @@ body.callout-on .callout .callout-icon::before {
   content: '';
 }
 
-body.callout-on .callout[data-callout='note'] .callout-icon::before {
+.markdown-rendered .callout[data-callout='note'] .callout-icon::before {
   content: '\e903';
 }
 
-body.callout-on .callout[data-callout='tip'] .callout-icon::before {
+.markdown-rendered .callout[data-callout='tip'] .callout-icon::before {
   content: '\e902';
 }
 
-body.callout-on .callout[data-callout='important'] .callout-icon::before {
+.markdown-rendered .callout[data-callout='important'] .callout-icon::before {
   content: '\e904';
 }
 
-body.callout-on .callout[data-callout='warning'] .callout-icon::before {
+.markdown-rendered .callout[data-callout='warning'] .callout-icon::before {
   content: '\e901';
 }
 
-body.callout-on .callout[data-callout='caution'] .callout-icon::before {
+.markdown-rendered .callout[data-callout='caution'] .callout-icon::before {
   content: '\e900';
 }
 
@@ -1293,6 +1174,16 @@ body.callout-on .callout[data-callout='caution'] .callout-icon::before {
   color: var(--fgColor-default);
 }
 
+.markdown-rendered h1,
+.markdown-rendered h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--borderColor-muted);
+}
+
+.markdown-rendered h6 {
+  color: var(--fgColor-muted);
+}
+
 /* Markdown hr */
 .markdown-rendered hr {
   margin-block: var(--base-size-24);
@@ -1303,16 +1194,6 @@ ul > li.task-list-item[data-task='x'],
 ul > li.task-list-item[data-task='X'] {
   color: var(--fgColor-default);
   text-decoration: initial;
-}
-
-/* Headers */
-body.headers-one-color {
-  --h1-color: var(--h-color-theme);
-  --h2-color: var(--h-color-theme);
-  --h3-color: var(--h-color-theme);
-  --h4-color: var(--h-color-theme);
-  --h5-color: var(--h-color-theme);
-  --h6-color: var(--h-color-theme);
 }
 
 /* Kanban-common */
@@ -1612,17 +1493,4 @@ input[type='number']:focus-visible {
 select:focus,
 .dropdown:focus {
   box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
-}
-
-/* Underline for the top level headers */
-body.h1-underline h1,
-body.h1-underline.markdown-rendered h1 {
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--borderColor-muted);
-}
-
-body.h2-underline h2,
-body.h2-underline.markdown-rendered h2 {
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid var(--borderColor-muted);
 }
