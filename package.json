@@ -1,14 +1,17 @@
 {
-  "name": "markdown-preivew-gfm",
+  "name": "markdown-preview-gfm",
   "type": "module",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.33.4",
   "author": "Frankie <1426203851@qq.com>",
   "license": "MIT",
+  "repository": "https://github.com/tofrankie/markdown-preview-gfm",
   "scripts": {
     "update-mpe-style": "node scripts/update-mpe-style.js",
     "update-mpe-style:watch": "node scripts/update-mpe-style.js --watch",
+    "update-obsidian-theme": "node scripts/update-obsidian-theme.js",
+    "update-obsidian-theme:watch": "node scripts/update-obsidian-theme.js --watch",
     "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:stylelint",
     "lint:eslint": "eslint . --cache --fix",
     "lint:prettier": "prettier . --cache --write --log-level silent '!pnpm-lock.yaml'",
